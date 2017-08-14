@@ -33,7 +33,9 @@ alert(day);*/
 function backFunction(){
 if (select==1) {
   // alert("came from homepage");
-   document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer').style.display = 'none';
+   document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer').style.display = 'none';admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});
 } else {
     //alert("came from quotespage");
 	  document.getElementById('Outer').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none';
